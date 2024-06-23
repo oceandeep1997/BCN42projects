@@ -6,7 +6,7 @@
 /*   By: zqiu <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/20 16:46:36 by zqiu              #+#    #+#             */
-/*   Updated: 2024/06/21 16:26:17 by zqiu             ###   ########.fr       */
+/*   Updated: 2024/06/23 17:09:27 by zqiu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		dst[i] = src[i];
 		i++;
 	}
+	if (size > 0)
+		dst[i] = '\0';
 	while (src[i])
 		i++;
 	return (i);

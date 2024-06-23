@@ -6,7 +6,7 @@
 /*   By: zqiu <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/21 16:28:08 by zqiu              #+#    #+#             */
-/*   Updated: 2024/06/21 18:49:41 by zqiu             ###   ########.fr       */
+/*   Updated: 2024/06/23 17:11:14 by zqiu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			if (ft_strncmp(big + i, little, len_little) == 0)
 				return ((char *)big + i);
 		}
+		i++;
 	}
 	return (NULL);
 }
