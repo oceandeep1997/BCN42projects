@@ -6,15 +6,14 @@
 /*   By: zqiu <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 18:58:39 by zqiu              #+#    #+#             */
-/*   Updated: 2024/06/23 19:13:19 by zqiu             ###   ########.fr       */
+/*   Updated: 2024/06/24 21:01:55 by zqiu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_create_arr(char const *s, char c)
+static char	**ft_create_arr(char const *s, char c)
 {
-	char	*str;
 	char	**arr;
 	size_t	len;
 	size_t	i;

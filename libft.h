@@ -6,7 +6,7 @@
 /*   By: zqiu <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 16:26:18 by zqiu              #+#    #+#             */
-/*   Updated: 2024/06/23 16:06:06 by zqiu             ###   ########.fr       */
+/*   Updated: 2024/06/24 21:33:36 by zqiu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,8 @@ char			**ft_split(char const *s, char c);
 char			*ft_strchr(const char *s, int c);
 
 char			*ft_strdup(const char *s1);
+
+void			ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 char			*ft_strjoin(char const *s1, char const *s2);
 
