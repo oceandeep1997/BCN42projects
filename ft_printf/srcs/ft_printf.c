@@ -6,7 +6,7 @@
 /*   By: zqiu <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/27 19:20:05 by zqiu              #+#    #+#             */
-/*   Updated: 2024/07/27 19:31:11 by zqiu             ###   ########.fr       */
+/*   Updated: 2024/08/06 19:07:45 by zqiu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,19 +22,19 @@ static int	handle_format(va_list args, char format)
 	else if (format == 's')
 		len += ft_putstr(va_arg(args, char *));
 	else if (format == 'p')
-		len += ft_putptr(va_arg(args, void *));
+		len += ft_putptr_suf(va_arg(args, void *));
 	else if (format == 'd' || format == 'i')
 		len += ft_putnbr(va_arg(args, int));
 	else if (format == 'u')
 		len += ft_putunbr(va_arg(args, unsigned int));
 	else if (format == 'x')
-		len += ft_puthex(va_arg(args, unsigned int), 0);
+		len += ft_puthex_suf(va_arg(args, unsigned int), 0);
 	else if (format == 'X')
-		len += ft_puthex(va_arg(args, unsigned int), 1);
+		len += ft_puthex_suf(va_arg(args, unsigned int), 1);
 	else if (format == '%')
 		len += ft_putchar('%');
 	else
-		len += ft_putchar(c);
+		len += ft_putchar('c');
 	return (len);
 }
 
