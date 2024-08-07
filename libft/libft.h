@@ -6,7 +6,7 @@
 /*   By: zqiu <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/19 16:26:18 by zqiu              #+#    #+#             */
-/*   Updated: 2024/06/24 21:33:36 by zqiu             ###   ########.fr       */
+/*   Updated: 2024/08/06 18:39:45 by zqiu             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ int				ft_isdigit(int c);
 int				ft_isprint(int c);
 
 char			*ft_itoa(int n);
-
+char			*ft_utoa(unsigned int n);
 void			*ft_memccpy(void *dst, const void *src, int c, size_t n);
 
 void			*ft_memchr(const void *s, int c, size_t n);

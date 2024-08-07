@@ -6,7 +6,7 @@
 #    By: zqiu <marvin@42.fr>                        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/08/06 17:59:01 by zqiu              #+#    #+#              #
-#    Updated: 2024/08/06 19:31:36 by zqiu             ###   ########.fr        #
+#    Updated: 2024/08/07 15:55:26 by zqiu             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,9 @@ all: $(NAME)
 
 $(NAME): $(OBJS) $(LIBFT)
 	ar rcs $@ $^
-	ranlib $@
+	@cp $(LIBFT) .
+	@mv libft.a $(NAME)
+	@ar -r $(NAME) $(OBJS)
 
 %.o: %.c $(INCLUDE) Makefile
 	$(CC) $(CFLAGS) -c $< -o $@ $(INCLUDES)
